@@ -136,17 +136,6 @@ img{
 .header__item:last-child{
     margin-right: 0;
 }
-.header__link{
-    font-size: 16px;
-    line-height: 19px;
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
-
-.header__link:hover, .header__link:focus, .header__link:active{
-    opacity: .75;
-}
 
 /* Header styles end */
 
@@ -276,18 +265,6 @@ img{
 
 .apart__text_but{
     padding-top: 50px;
-}
-
-.button__link{
-    display: inline-block;
-    vertical-align: top;
-    font-size: 16px;
-    line-height: 19px;
-    text-decoration: none;
-    color: #FFFFFF;
-    border: 1px solid #fff;
-    padding: 20px 23px 17px 16.5px;
-    border-radius: 7px;
 }
 
 .button_show{
