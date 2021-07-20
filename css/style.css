@@ -1,0 +1,336 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0-modified | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    max-width: 100%;
+}
+
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+
+/* Core Sans C 900 */
+@font-face {
+    font-family: 'Core Sans C';
+    font-style: normal;
+    font-weight: 900;
+    src: local('CoreSansC-55Medium'),
+        url('../fonts/CoreSansC-55Medium.ttf') format('truetype'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+}
+
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Core Sans C';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.wrapper-full{
+    max-width: 1588px;
+    margin: 0 auto;
+}
+
+/* Header styles start */
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #FFFFFF;
+}
+
+.header__logo-pic{
+    font-size: 16px;
+    line-height: 16px;
+    padding-top: 58px;
+}
+
+.header__number{
+    padding: 0; margin: 0;
+    padding-top: 46px;
+}
+
+.header__number_n{
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.header__number_text{
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(255,255,255,0.7);
+}
+
+.header__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.header__list{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 43px;
+}
+.header__item{
+    margin-right: 20px;
+}
+.header__item:last-child{
+    margin-right: 0;
+}
+.header__link{
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+.header__link:hover, .header__link:focus, .header__link:active{
+    opacity: .75;
+}
+
+/* Header styles end */
+
+
+/* Intro styles start */
+
+/*main start*/
+
+.main{
+    position: fixed;
+    top: 29.3%;
+    left: 0;
+    width: 100%;
+    color: #FFFFFF;
+}
+
+.main__link{
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(255,255,255,0.7);
+
+}
+
+.main__intro{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.main__item{
+    margin-top: 11px;
+
+}
+
+.main__item:first-child{
+    margin-top: 0px;
+    
+}
+
+.main__nav{
+    margin-left: 260px;
+}
+
+.main__nav2{
+    margin-left: 44px;
+}
+
+/* hover photo finance start*/
+
+.show_visibility{
+    position: absolute;
+    margin-top: 143px;
+    opacity: 0;
+    -webkit-transition: all .75s;
+    -o-transition: all .75s;
+    transition: all .75s; 
+}
+
+#main__link_hover:hover + .show_visibility{
+    opacity: 1;
+}
+
+.buildcss{
+    width: 373px;
+    height: 231px;
+    border-radius: 10px;
+}
+
+.buildtext{
+    margin-top: 17px;
+}
+
+.buildtext, .buildtext1{
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.buildtext1{
+    color: rgba(255,255,255,0.7);
+}
+
+/* hover photo finance end*/
+
+/*main end*/
+
+/*Swipe_bg start*/
+
+.swipe_bg{
+    align-items: flex-start;
+    margin-left: 201px;
+}
+
+#right_but{
+    margin-left: 37.16px;        
+}
+
+
+#swipe__bg-pic1, #swipe__bg-pic2, #swipe__bg-pic3{
+    position: absolute;
+
+}
+
+#swipe__bg-pic2{
+    margin-top: -14px;
+    margin-left: -16px;
+}
+
+#swipe__bg-pic3{
+    margin-top: -14px;
+    margin-left: -6px;
+}
+
+
+/*Swipe_bg end*/
+
+.apart__text{
+    padding-left: 60px;
+    margin-top: -15px;
+}
+
+.text__rigth{
+    font-size: 40px;
+    line-height: 47px;
+    align-items: center;
+}
+/* Button*/
+
+.apart__text_but{
+    padding-top: 50px;
+}
+
+.button__link{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    color: #FFFFFF;
+    border: 1px solid #fff;
+    padding: 20px 23px 17px 16.5px;
+    border-radius: 7px;
+}
+
+.button_show{
+    padding-right: 12.5px;
+}
+
+.link_text_right{
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration: none;
+    color: #FFFFFF;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 30px; 
+}
+
+.link_text_right_p{
+    padding-left: 7px;
+}
+
+/*Button end*/
+
+/*socity start*/
+
+.container_socity{
+    display: block;
+    flex-direction: column;
+}
+
+.facebook, .inst, .tw, .vk{
+    margin-left: 44px; 
+}
+
+.inst, .tw, .vk{
+    margin-top: 39px;
+}
+/*socity end*/
+
+
+/* Intro styles end */
+
+
+
+
+
+
