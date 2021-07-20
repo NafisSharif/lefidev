@@ -267,8 +267,23 @@ img{
     padding-top: 50px;
 }
 
+.button__link{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    color: #FFFFFF;
+    border: 1px solid #fff;
+    padding: 20px 23px 17px 16.5px;
+    border-radius: 7px;
+}
 .button_show{
     padding-right: 12.5px;
+}
+
+.button__link:hover{
+    opacity: .75;
 }
 
 .link_text_right{

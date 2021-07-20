@@ -8,7 +8,8 @@
     transform-origin: 50% 0;
     transform-style: preserve-3d;
     position: relative;
-    transition: transform 0.3s;
+    transition: transform 0.4s;
+    text-decoration:none
 }
 .header__link:hover span{ transform: rotateX(90deg) translateY(-22px); }
 .header__link span:before{
@@ -20,7 +21,7 @@
     position: absolute;
     top: 100%;
     left: 0;
-    transition: color 0.6s;
+    text-decoration:none
 }
 
 @media only screen{
@@ -31,51 +32,3 @@
 }
 
 /*header nav effect end*/
-
-/*Choose apart touch effect start*/
-
-.button__link{
-    display: inline-block;
-    vertical-align: top;
-    font-size: 16px;
-    line-height: 19px;
-    text-decoration: none;
-    color: #FFFFFF;
-    border: 1px solid #fff;
-    padding: 20px 23px 17px 16.5px;
-    border-radius: 7px;
-    overflow: hidden;
-    z-index: 1;
-    position: relative;
-    transition: all 0.3s ease 0s;
-}
-.button__link, :hover{ color: #000; }
-.button__link:before,
-.button__link:after{
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: #fff;
-    opacity: 0;
-    z-index: -1;
-    transform: scale(0.1);
-    transform-origin: left top 0
-}
-.button__link:after{
-    top: auto;
-    left: auto;
-    bottom: 0;
-    right: 0;
-    transform-origin: right bottom 0;
-}
-.button__link:hover:before,
-.button__link:hover:after{
-    opacity: 1;
-    transform: scale(1);
-    transition: all 0.3s linear 0s;
-}
-@media only screen and (max-width: 767px){
-    .button__link{ margin-bottom: 20px; }
-}
-
-/*Choose apart touch effect end*/
